@@ -20,20 +20,21 @@ body{
 }
 .principal{
     position: relative;
-    top: 5%;
+    width: 100vw;
+    margin: 5vh 0;
 }
 .title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5vh;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin: 0 1rem 0.5rem;
 }
 .subtitle{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2vh;
     text-transform: uppercase;
     padding: 0 2.2em;
     margin-bottom: 0.5rem;
@@ -75,11 +76,35 @@ body{
         display: inline-block;
         width: 55vw;
         height: 100vh;
-        background-color: transparent;
     }
     .logotipo{
         margin: 3vh 2vw;
         width: 20vw;
+    }
+    .principal{
+        position: relative;
+        width: 100%;
+        margin: 15% 0;
+    }
+    .title{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        text-align: start;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        margin: 0 10rem 1rem 3rem;
+    }
+    .subtitle{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: start;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin: 0 10rem 1rem 3rem;
+        padding: 0;
+    }
+    .button{
+        display: block;
+        margin: 0 2.5rem;
     }
     .right{
         position: relative;
