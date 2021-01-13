@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    background-color: #D9D4D2;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    display: inline-block;
+    width: 100vw;
+    height: 50vh;
+}
+.right{
+    display: inline-block;
+    width: 100vw;
+    height: 50vh;
+    background-image: linear-gradient(#0d0000cc, #0d0000);
+    box-shadow: 0 -5px 6px #00000066;
+}
+
+@media screen and (min-width:480px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .left{
+        display: inline-block;
+        width: 55vw;
+        height: 100vh;
+        background-color: transparent;
+    }
+    .right{
+        display: inline-block;
+        width: 45vw;
+        height: 100vh;
+        background-image: linear-gradient(#0d0000cc, #0d0000);
+        box-shadow: -5px 0 6px #00000066;
+    }
+}
