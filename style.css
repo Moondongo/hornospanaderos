@@ -9,16 +9,34 @@ body{
 .left{
     display: inline-block;
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
+}
+.logotipo{
+    margin: 2vh;
+    width: 40vw;
 }
 .right{
     display: inline-block;
+    position: relative;
     width: 100vw;
-    height: 50vh;
+    height: 80vh;
     background-image: linear-gradient(#0d0000cc, #0d0000);
     box-shadow: 0 -5px 6px #00000066;
 }
+.horno{
+    display: block;
+    width: 80vw;
+    margin: 50px auto;
+}
+.switch3d{
+    position: absolute;
+    z-index: 30;
+    top: 3%;
+    left: 70%;
+    width: 25vw;
+}
 
+/* DESKTOP */
 @media screen and (min-width:480px){
     .container{
         display: flex;
@@ -30,11 +48,28 @@ body{
         height: 100vh;
         background-color: transparent;
     }
+    .logotipo{
+        margin: 3vh 2vw;
+        width: 20vw;
+    }
     .right{
+        position: relative;
         display: inline-block;
         width: 45vw;
         height: 100vh;
         background-image: linear-gradient(#0d0000cc, #0d0000);
         box-shadow: -5px 0 6px #00000066;
+    }
+    .horno{
+        display: block;
+        width: 25vw;
+        margin: 100px auto;
+    }
+    .switch3d{
+        position: absolute;
+        z-index: 30;
+        top: 90%;
+        left: 80%;
+        width: 8vw;
     }
 }
