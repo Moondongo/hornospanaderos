@@ -1,5 +1,7 @@
 *{
     color: #0D0000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 body{
     margin: 0;
@@ -15,7 +17,7 @@ body{
     height: 50vh;
 }
 .logotipo{
-    margin: 2vh;
+    margin: 3vh 3vw;
     width: 40vw;
 }
 .principal{
@@ -24,7 +26,6 @@ body{
     margin: 5vh 0;
 }
 .title{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: 2.5vh;
@@ -32,7 +33,6 @@ body{
     margin: 0 1rem 0.5rem;
 }
 .subtitle{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 2vh;
     text-transform: uppercase;
@@ -51,7 +51,7 @@ body{
     height: 90vh;
     background-image: linear-gradient(#0d0000cc, #0d0000);
     box-shadow: 0 -5px 6px #00000066;
-    overflow: hidden;
+
 }
 .horno{
     display: block;
@@ -66,6 +66,59 @@ body{
     width: 25vw;
 }
 
+/*///////////////////*/
+.header{
+    width: 100%;
+    position: absolute;
+    top: -53%;
+    left: 0;
+    z-index: 50;
+}
+.btn-menu{
+    display: none;
+}
+.icon-menu{
+    display: block;
+    background-image: url('asset/menu.png');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 40px;
+    transition: all 50ms ease;
+    margin: 10px;
+    position: relative;
+    left: 85vw;
+    z-index: 50;
+}
+.menu{
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    background-color: #D9D4D2;
+    width: 100%;
+    padding: 0;
+    margin-top: -100%;
+    list-style: none;
+    transition: all 500ms ease;
+    z-index: 30;
+}
+.menu__item{
+    display: block;
+    padding: 1.6vh;
+    font-weight: 600;
+    color: #73655D;
+    font-size: 3vh;
+}
+.menu__item a{
+    text-decoration: none;
+    color: #73655D;
+}
+.menu__item img{
+    width: 3vh;
+}
+.btn-menu:checked + .menu{
+    margin: 0;
+    transition: all 500ms ease;
+}
 /* DESKTOP */
 @media screen and (min-width:480px){
     .container{
@@ -88,7 +141,6 @@ body{
         margin: 10vmax 0;
     }
     .title{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bold;
         text-align: start;
         font-size: 3vmax;
@@ -96,7 +148,6 @@ body{
         margin: 0 10vmax 1.5vmin 2vmax;
     }
     .subtitle{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: start;
         font-size: 1.8vmax;
         text-transform: uppercase;
@@ -118,8 +169,9 @@ body{
     }
     .horno{
         display: block;
-        width: 25vmax;
-        margin: 15vmin auto;
+        width: 50vh;
+        margin: 15vh auto;
+        object-fit: contain;
     }
     .switch3d{
         position: absolute;
@@ -127,5 +179,45 @@ body{
         top: 90%;
         left: 80%;
         width: 8vw;
+    }
+    .header{
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 50;
+    }
+    .btn-menu{
+        display: none;
+    }
+    .icon-menu{
+        display: none;
+        background-image: url('asset/menu.png');
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 40px;
+        transition: all 50ms ease;
+        margin: 10px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: transparent;
+    }
+    .menu__item{
+        display: block;
+        padding: 4vh 2vw;
+        font-weight: 600;
+        color: #E1E1E1;
+        font-size: 1vw;
+    }
+    .menu__item a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .menu__item img{
+        width: 1.5vw;
     }
 }
