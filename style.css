@@ -31,6 +31,7 @@ body{
     font-size: 2.5vh;
     text-transform: uppercase;
     margin: 0 1rem 0.5rem;
+    color: #73655D;
 }
 .subtitle{
     text-align: center;
@@ -38,6 +39,7 @@ body{
     text-transform: uppercase;
     padding: 0 2.2em;
     margin-bottom: 0.5rem;
+    color: #73655D;
 }
 .button{
     display: block;
@@ -119,6 +121,39 @@ body{
     margin: 0;
     transition: all 500ms ease;
 }
+.canvas{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 80%;
+    display: block;
+    margin: auto;
+}
+.off{
+    opacity: 0;
+}
+.loading{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(#0d0000e5, #0d0000);
+}
+.loader{
+    margin: 70% 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 8vw;
+    color: white;
+}
+.fade{
+    opacity: 0;
+    transition: all 500ms ease;
+}
 /* DESKTOP */
 @media screen and (min-width:480px){
     .container{
@@ -141,18 +176,20 @@ body{
         margin: 10vmax 0;
     }
     .title{
-        font-weight: bold;
+        font-weight: 600;
         text-align: start;
-        font-size: 3vmax;
+        font-size: 3vw;
         text-transform: uppercase;
         margin: 0 10vmax 1.5vmin 2vmax;
+        color: #73655D;
     }
     .subtitle{
         text-align: start;
-        font-size: 1.8vmax;
+        font-size: 1.5vw;
         text-transform: uppercase;
-        margin: 0 10vmax 1.5vmin 2vmax;
+        margin: 0 15vmax 1.5vmin 2vmax;
         padding: 0;
+        color: #73655D;
     }
     .button{
         display: block;
