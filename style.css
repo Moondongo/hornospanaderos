@@ -288,6 +288,10 @@ body{
     .menu__item img{
         width: 1.5vw;
     }
+    .menu::before{
+        content: '';
+        display: none;
+    }
     .canvas{
         position: absolute;
         top: 0;
