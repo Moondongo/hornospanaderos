@@ -173,6 +173,10 @@ body{
         margin: 15vh auto;
         object-fit: contain;
     }
+    .fade{
+        opacity: 0;
+        transition: all 500ms ease;
+    }
     .switch3d{
         position: absolute;
         z-index: 30;
@@ -220,4 +224,17 @@ body{
     .menu__item img{
         width: 1.5vw;
     }
+    .canvas{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 35vw;
+        height: 80vh;
+        display: block;
+        margin: auto;
+    }
 }
+
+
