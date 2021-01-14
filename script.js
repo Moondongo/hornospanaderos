@@ -9,7 +9,11 @@ let loadingManager;
 const canvas = document.getElementById('canvas');
 const switch3D = document.getElementById('switch3d');
 let id;
-switch3D.addEventListener('click', init);
+switch3D.addEventListener('click', () =>{
+    document.getElementById('loading').classList.remove('off');
+    init();
+});
+
 
 function init(){
     switch3D.remove();
@@ -108,11 +112,11 @@ function onWindowResize() {
 
 function loadManager(){
     loadingManager = new THREE.LoadingManager(()=>{
-        const loadingScreen = document.getElementById('horno');
+        const loadingScreen = document.getElementById('loading');
         loadingScreen.classList.add('fade');
         loadingScreen.addEventListener('transitionend', e =>{
             e.target.remove();
-            console.log("hola");
+            document.getElementById('horno').remove();
         });
     });
 }

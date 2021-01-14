@@ -173,6 +173,24 @@ body{
         margin: 15vh auto;
         object-fit: contain;
     }
+    .off{
+        opacity: 0;
+    }
+    .loading{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(#0d0000e5, #0d0000);
+    }
+    .loader{
+        margin: 50% 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2vw;
+        color: white;
+    }
     .fade{
         opacity: 0;
         transition: all 500ms ease;
