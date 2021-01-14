@@ -103,6 +103,15 @@ body{
     transition: all 500ms ease;
     z-index: 30;
 }
+.menu::before{
+    content: '';
+    display: block;
+    background-color: #D9D4D2;
+    height: 12vh;
+    width: 100%;
+    position: absolute;
+    top: -11vh;
+}
 .menu__item{
     display: block;
     padding: 1.6vh;
