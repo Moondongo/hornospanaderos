@@ -113,10 +113,10 @@ function onWindowResize() {
 function loadManager(){
     loadingManager = new THREE.LoadingManager(()=>{
         const loadingScreen = document.getElementById('loading');
+        document.getElementById('horno').remove();
         loadingScreen.classList.add('fade');
         loadingScreen.addEventListener('transitionend', e =>{
             e.target.remove();
-            document.getElementById('horno').remove();
         });
     });
 }
