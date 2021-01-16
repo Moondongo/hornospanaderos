@@ -22,7 +22,7 @@ function init(){
     createCamera();
     loadManager();
     createControls();
-    cargarModelo('3dmodel/horno 2.0/horno 2.glb');
+    cargarModelo('3dmodel/horno 2.0/horno 2.gltf');
     //lighting();
     render();
     animation();
