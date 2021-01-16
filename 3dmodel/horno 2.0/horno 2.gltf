@@ -1,0 +1,164 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 23010,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 9484,
+      "max": [
+        0.650995492935181,
+        1.09337484836578,
+        0.910532593727112
+      ],
+      "min": [
+        -0.600995481014252,
+        -1.0,
+        -0.7374267578125
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 9484,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 9484,
+      "type": "VEC2"
+    }
+  ],
+  "asset": {
+    "generator": "Substance Painter 6.2.2",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 92040,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 113808,
+      "byteOffset": 92040,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 113808,
+      "byteOffset": 205848,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 75872,
+      "byteOffset": 319656,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 395528,
+      "uri": "horno 2.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "horno_baseColor.png"
+    },
+    {
+      "uri": "horno_occlusionRoughnessMetallic.png"
+    },
+    {
+      "uri": "horno_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "OPAQUE",
+      "name": "horno",
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cube.007",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 2,
+            "POSITION": 1,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "Horno Final"
+    },
+    {
+      "mesh": 0,
+      "name": "Cube.007"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9985,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

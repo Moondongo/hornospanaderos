@@ -22,7 +22,7 @@ function init(){
     createCamera();
     loadManager();
     createControls();
-    cargarModelo('3dmodel/horno/horno.glb');
+    cargarModelo('3dmodel/horno 2.0/horno 2.glb');
     //lighting();
     render();
     animation();
@@ -41,7 +41,7 @@ function createCamera(){
     const far = 8;
     camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
     camera.position.z = 7;
-     camera.position.y = 0.25;
+    camera.position.y = 0.25;
     // camera.position.x = 0.9;
 }
 function createRenderer(){
@@ -65,9 +65,11 @@ function render(){
 }
 
 function cargarModelo(patch){
+    const maxAnisotropy = renderer.capabilities.getMaxAnisotropy();
     const loader = new GLTFLoader(loadingManager);
     loader.load(patch, gltf =>{
         object = gltf.scene.children[0];
+        //object.children[0].material.map.anisotropy = maxAnisotropy;
         scene.add(gltf.scene);
         render();
     }, undefined, error =>{
@@ -82,7 +84,7 @@ function lighting(){
     const light = new THREE.HemisphereLight(0xffffff, 0xffffff, 1);
     scene.add(light);
 
-    const ambient = new THREE.AmbientLight(0x352847);
+    const ambient = new THREE.AmbientLight(0xffffff);
     scene.add(ambient);
 }
 
